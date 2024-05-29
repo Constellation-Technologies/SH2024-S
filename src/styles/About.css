@@ -1,0 +1,34 @@
+.container-about {
+    width: 100%; /* Changed from 100vw to 100% */
+    height: 100vh;
+    margin: 0;
+    background-image: url('/blue-gradient.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.beach-top-image {
+    position: absolute;
+    bottom: 100vh;
+    width: 100%;
+    height: 20%;
+    z-index: 1;
+}
+
+.bottom-image {
+    position: absolute;
+    bottom: 100vh;
+    width: 100%;
+    height: 45%;
+}
+
+@media (max-width: 768px) {
+    .bottom-image {
+        height: 25%;
+        bottom: 100vh;
+    }
+    .beach-top-image {
+        height: 25%;
+        bottom: 100vh;
+    }
+}
