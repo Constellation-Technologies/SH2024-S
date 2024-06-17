@@ -6,7 +6,7 @@ import "animate.css";
 function Landing() {
   return (
     <>
-      <div className="container">
+      <div className="container w-screen h-screen">
         <img
           src={planets}
           alt="Planets"

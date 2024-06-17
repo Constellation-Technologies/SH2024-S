@@ -1,5 +1,6 @@
 .container-about {
-    width: 100%; /* Changed from 100vw to 100% */
+    width: 100%;
+    /* Changed from 100vw to 100% */
     height: 100vh;
     margin: 0;
     background-image: url('/blue-gradient.png');
@@ -22,11 +23,16 @@
     height: 45%;
 }
 
+.about-title {
+    /* -webkit-text-stroke: 2px white; */
+}
+
 @media (max-width: 768px) {
     .bottom-image {
         height: 25%;
         bottom: 100vh;
     }
+
     .beach-top-image {
         height: 25%;
         bottom: 100vh;
