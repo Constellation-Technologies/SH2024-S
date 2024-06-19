@@ -10,16 +10,16 @@ function About() {
         <img
           src={beach}
           alt="Beach"
-          className="w-screen bottom-image animate__animated animate__fadeInUp"
+          className="w-screen h-[40vh] bottom-image animate__animated animate__fadeInUp"
         />
         <img
           src={beachTop}
           alt="Beach Top"
-          className="beach-top-image animate__animated animate__fadeInUp"
+          className="w-screen beach-top-image animate__animated animate__fadeInUp"
         />
-        <div className="container-about px-20 py-12 w-screen">
-          <div className="about-title text-black font-bold col-span-4 flex justify-center text-6xl my-8">STAR HACK ALLIANCE</div>
-          <div className="grid-about grid grid-cols-4 grid-rows-2 gap-x-[5vw] gap-y-[5vh]">
+        <div className="container-about px-20 py-12 w-screen h-[140vh] translate-y-[20rem]">
+          <div className="about-title text-black font-extrabold font-[Inter] col-span-4 flex justify-center text-6xl my-8">STAR HACK ALLIANCE</div>
+          <div className="grid-about h-[80vh] grid grid-cols-4 grid-rows-[2fr_1fr] gap-x-[1vw] gap-y-[5vh]">
             <div className="about-heading rounded-3xl text-black col-span-3 flex flex-col justify-center border-solid border-white border-8 px-8 gap-4 bg-[rgba(255,255,255,0.15)]">
               <h1 className="heading underline decoration-white decoration-solid text-white w-[100%] text-4xl font-bold">About Us</h1>
               <p className="w-full flex justify-center text-center text-white text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae autem accusantium voluptatem consequuntur incidunt, non corrupti aspernatur dolores neque voluptatibus eligendi distinctio, at laborum nihil! Magni minima officiis nam earum veritatis est maiores nihil atque numquam amet dicta quos quia enim rem magnam, consequatur unde.</p>

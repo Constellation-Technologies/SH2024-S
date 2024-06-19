@@ -1,15 +1,35 @@
+import { ReactElement } from 'react';
 import Countdown from 'react-countdown';
+import { zeroPad } from 'react-countdown';
+
+interface CountdownElement {
+    days: number,
+    hours: number,
+    minutes: number,
+    seconds: number
+}
+
+const renderer = ({ days, hours, minutes, seconds }: CountdownElement) => {
+    return (
+        <span style={{ color: 'white', fontFamily: 'Inter', fontWeight: 'bold', fontSize: '12rem', margin: '2rem' }}>
+            <span style={{ color: '#B84CFF' }} className='about-title'>{zeroPad(days)}</span>:<span style={{ color: '#73C0FE' }} className='about-title'>{zeroPad(hours)}</span>:<span style={{ color: '#FAFBDB' }} className='about-title'>{zeroPad(minutes)}</span>:<span style={{ color: '#FD8E8E' }} className='about-title'>{zeroPad(seconds)}</span>
+        </span>
+    );
+};
 
 function Count() {
 
     return (
-        <div className="w-screen">
+        <div className="w-screen translate-y-[3rem]">
             <img
                 src="beach-countdown.png"
                 alt="Beach"
-                className="w-screen bottom-image animate__animated animate__fadeInUp"
+                className="w-screen h-[25vh] bottom-image animate__animated animate__fadeInUp"
             />
-            <div className='w-screen h-screen flex items-center justify-center text-white text-8xl bg-gradient-to-r from-[#282828] to-[#090909]'><Countdown date={'7/14/2024'} /></div>
+            <div className='w-screen h-screen flex flex-col items-center justify-center text-white text-8xl bg-gradient-to-r from-[#282828] to-[#090909]'>
+                <h1 className='text-center text-black font-extrabold about-title font-[Inter] text-6xl'>July 14-21 2024</h1>
+                <Countdown date={'7/14/2024'} renderer={renderer} zeroPadTime={2} />
+            </div>
         </div>
     )
 }
