@@ -58,6 +58,15 @@ const Sponsors = () => {
 					</div>
 				</div>
 			</div>
+
+			<div className="mobile-content">
+				<h2 className="heading">Sponsors</h2>
+				<img src="/logos/example-logo.png" alt="" />
+				<img src="/logos/example-logo.png" alt="" />
+				<img src="/logos/example-logo.png" alt="" />
+				<img src="/logos/example-logo.png" alt="" />
+				<img src="/logos/example-logo.png" alt="" />
+			</div>
 		</div>
 	);
 };

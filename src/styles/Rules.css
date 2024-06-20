@@ -1,5 +1,5 @@
 .rules-container {
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	position: relative;
 	font-family: sans-serif;
@@ -56,6 +56,12 @@
 	.rules-container .text {
 		font-size: 1.75rem;
 	}
+
+	.rules-container .text {
+		margin: 0 auto;
+		box-sizing: border-box;
+		padding: 0 1rem;
+	}
 }
 
 @media only screen and (min-width: 1290px) {
@@ -68,5 +74,40 @@
 
 	.rules-container .text {
 		font-size: 2.5rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.rules-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.rules-container .heading {
+		font-size: 4rem;
+		padding-top: 2rem;
+		transform: translateY(-2rem);
+		margin-bottom: 0;
+	}
+
+	.rules-container .text {
+		font-size: 1.5rem;
+	}
+
+	.rules-container .text {
+		margin: 0 auto;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 1rem;
+	}
+
+	.rules-container .background-wave {
+		width: 100%;
+		height: 140vh;
+		position: absolute;
+		transform: translateY(-5rem);
+		z-index: 1;
+		user-select: none;
 	}
 }
