@@ -9,10 +9,8 @@ function App() {
     <>
       <ParallaxProvider>
         <Landing />
-        <Parallax translateY={[-12, -40]}>
+        <Parallax translateY={[-20, -100]}>
           <About />
-        </Parallax>
-        <Parallax translateY={[-10, -25]}>
           <Countdown />
         </Parallax>
       </ParallaxProvider>
