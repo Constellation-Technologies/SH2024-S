@@ -4,6 +4,7 @@ import About from "./components/About";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import Sponsors from "./components/Sponsors";
 import Rules from "./components/Rules";
+import Timer from "./components/Timer";
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 					<About />
 					<Sponsors />
 					<Rules />
+					<Timer />
 				</Parallax>
 			</ParallaxProvider>
 		</>
